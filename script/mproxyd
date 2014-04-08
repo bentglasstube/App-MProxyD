@@ -1,0 +1,9 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use App::MProxyD;
+
+my $app = App::MProxyD->new();
+$app->parse_options(@ARGV);
+$app->execute() or exit 1;
